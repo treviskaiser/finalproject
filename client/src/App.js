@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Search from "../src/Pages/SearchRec/SearchRec";
 import Store from "../src/Pages/SearchStore/SearchStore";
 import Saved from "../src/Pages/Saved/saved";
+import Login from "../src/Pages/Login/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import API from "../src/utils/API";
 
 import "./App.css";
+import LoginPage from "./components/Auth/LoginPage";
 
 class App extends Component {
   state = {
@@ -124,6 +126,7 @@ class App extends Component {
           />
 
           <Route exact path="/saved/" component={Saved} />
+          <Route exact path="/login/" component={Login} />
         </Router>
       </div>
     );

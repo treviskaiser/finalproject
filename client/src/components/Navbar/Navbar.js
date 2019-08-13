@@ -26,6 +26,9 @@ class Navs extends Component {
             <Nav.Link href="/saved" style={whiteText}>
               Saved
             </Nav.Link>
+            <Nav.Link href="/login" style={whiteText}>
+              Login
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
