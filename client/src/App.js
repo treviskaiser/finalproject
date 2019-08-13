@@ -61,6 +61,12 @@ class App extends Component {
     if (this.state.selectedDrink.strIngredient4 !== "") {
       ingredientList.push(this.state.selectedDrink.strIngredient4);
     }
+    if (this.state.selectedDrink.strIngredient4 !== "") {
+      ingredientList.push(this.state.selectedDrink.strIngredient5);
+    }
+    if (this.state.selectedDrink.strIngredient4 !== "") {
+      ingredientList.push(this.state.selectedDrink.strIngredient6);
+    }
     console.log(ingredientList);
     API.saveDrink({
       recipeName: this.state.selectedDrink.strDrink,
