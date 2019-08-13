@@ -7,8 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import API from "../src/utils/API";
 
 import "./App.css";
-const APIONE = process.env.REACT_APP_COCKTAIL_API_KEY;
-console.log(APIONE);
 
 class App extends Component {
   state = {
