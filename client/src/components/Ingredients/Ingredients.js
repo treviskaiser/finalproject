@@ -33,8 +33,11 @@ const Ingredients = props => (
             ))}
         </Card.Text>
         <Link to={props.selectedDrink ? "/shopping/" : null}>
-          <Button variant="primary" onClick={props.save}>
+          <Button className="button" variant="primary">
             Make Shopping List{" "}
+          </Button>
+          <Button className="button" variant="primary" onClick={props.save}>
+            Save Recipe{" "}
           </Button>
         </Link>
       </Card.Body>
