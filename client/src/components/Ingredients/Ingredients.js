@@ -8,7 +8,12 @@ const getIngredients = drink => {
   let drinkList = [];
   for (let [key, value] of Object.entries(drink)) {
     if (value && key.indexOf("strIngredient") > -1) {
-      drinkList.push(value);
+      const item = {};
+      item.ingredient = value;
+      const measurement = "strMeasure" + key.split("strIngredient")[1];
+      item.measurement = drink[measurement];
+      console.log(item);
+      drinkList.push(item);
     }
   }
   return drinkList;
@@ -26,9 +31,9 @@ const Ingredients = props => (
           <p />
           Ingredients:{" "}
           {props.selectedDrink &&
-            getIngredients(props.selectedDrink).map(ingredient => (
+            getIngredients(props.selectedDrink).map(item => (
               <div>
-                <ul>{ingredient}</ul>
+                <ul>{`${item.measurement} ${item.ingredient}`}</ul>
               </div>
             ))}
         </Card.Text>
