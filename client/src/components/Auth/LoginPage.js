@@ -13,7 +13,7 @@ export default class LoginPage extends React.Component {
     this.widget = new OktaSignIn({
       baseUrl: "https://dev-589395.okta.com",
       clientId: "0oa12w6b7xQQ3aRmi357",
-      redirectUri: "http://localhost:3000",
+      redirectUri: "https://cocktailwizard.herokuapp.com/login",
       authParams: {
         responseType: "id_token"
       }
