@@ -59,10 +59,10 @@ class App extends Component {
     if (this.state.selectedDrink.strIngredient4 !== "") {
       ingredientList.push(this.state.selectedDrink.strIngredient4);
     }
-    if (this.state.selectedDrink.strIngredient4 !== "") {
+    if (this.state.selectedDrink.strIngredient5 !== "") {
       ingredientList.push(this.state.selectedDrink.strIngredient5);
     }
-    if (this.state.selectedDrink.strIngredient4 !== "") {
+    if (this.state.selectedDrink.strIngredient6 !== "") {
       ingredientList.push(this.state.selectedDrink.strIngredient6);
     }
     console.log(ingredientList);
